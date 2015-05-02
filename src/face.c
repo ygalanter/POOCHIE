@@ -21,7 +21,6 @@ static TextLayer *s_textlayer_date;
 static void initialise_ui(void) {
   s_window = window_create();
   window_set_background_color(s_window, GColorBlack);
-  window_set_fullscreen(s_window, true);
   
   s_res_image_background = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BACKGROUND);
   s_res_digital_seven_mono_45 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_DIGITAL_SEVEN_MONO_45));
@@ -36,7 +35,6 @@ static void initialise_ui(void) {
   // s_textlayer_h1
   s_textlayer_h1 = text_layer_create(GRect(13, 21, 25, 45));
   text_layer_set_background_color(s_textlayer_h1, GColorBlack);
-  text_layer_set_text_color(s_textlayer_h1, GColorWhite);
   text_layer_set_text(s_textlayer_h1, "0");
   text_layer_set_font(s_textlayer_h1, s_res_digital_seven_mono_45);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_h1);
@@ -44,7 +42,6 @@ static void initialise_ui(void) {
   // s_textlayer_m2
   s_textlayer_m2 = text_layer_create(GRect(109, 21, 25, 45));
   text_layer_set_background_color(s_textlayer_m2, GColorBlack);
-  text_layer_set_text_color(s_textlayer_m2, GColorWhite);
   text_layer_set_text(s_textlayer_m2, "0");
   text_layer_set_font(s_textlayer_m2, s_res_digital_seven_mono_45);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_m2);
@@ -52,7 +49,6 @@ static void initialise_ui(void) {
   // s_textlayer_h2
   s_textlayer_h2 = text_layer_create(GRect(37, -4, 35, 70));
   text_layer_set_background_color(s_textlayer_h2, GColorClear);
-  text_layer_set_text_color(s_textlayer_h2, GColorWhite);
   text_layer_set_text(s_textlayer_h2, "0");
   text_layer_set_font(s_textlayer_h2, s_res_digital_seven_mono_70);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_h2);
@@ -60,7 +56,6 @@ static void initialise_ui(void) {
   // s_textlayer_m1
   s_textlayer_m1 = text_layer_create(GRect(75, -4, 35, 70));
   text_layer_set_background_color(s_textlayer_m1, GColorClear);
-  text_layer_set_text_color(s_textlayer_m1, GColorWhite);
   text_layer_set_text(s_textlayer_m1, "0");
   text_layer_set_font(s_textlayer_m1, s_res_digital_seven_mono_70);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_m1);
@@ -68,7 +63,6 @@ static void initialise_ui(void) {
   // s_textlayer_y1
   s_textlayer_y1 = text_layer_create(GRect(13, 90, 25, 45));
   text_layer_set_background_color(s_textlayer_y1, GColorBlack);
-  text_layer_set_text_color(s_textlayer_y1, GColorWhite);
   text_layer_set_text(s_textlayer_y1, "0");
   text_layer_set_font(s_textlayer_y1, s_res_digital_seven_mono_45);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_y1);
@@ -76,7 +70,6 @@ static void initialise_ui(void) {
   // s_textlayer_y2
   s_textlayer_y2 = text_layer_create(GRect(37, 82, 35, 70));
   text_layer_set_background_color(s_textlayer_y2, GColorClear);
-  text_layer_set_text_color(s_textlayer_y2, GColorWhite);
   text_layer_set_text(s_textlayer_y2, "0");
   text_layer_set_font(s_textlayer_y2, s_res_digital_seven_mono_70);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_y2);
@@ -84,15 +77,13 @@ static void initialise_ui(void) {
   // s_textlayer_y3
   s_textlayer_y3 = text_layer_create(GRect(75, 82, 35, 70));
   text_layer_set_background_color(s_textlayer_y3, GColorClear);
-  text_layer_set_text_color(s_textlayer_y3, GColorWhite);
-  text_layer_set_text(s_textlayer_y3, "0");
   text_layer_set_font(s_textlayer_y3, s_res_digital_seven_mono_70);
+  text_layer_set_text(s_textlayer_y3, "0");
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_y3);
   
   // s_textlayer_y4
   s_textlayer_y4 = text_layer_create(GRect(109, 90, 25, 45));
   text_layer_set_background_color(s_textlayer_y4, GColorBlack);
-  text_layer_set_text_color(s_textlayer_y4, GColorWhite);
   text_layer_set_text(s_textlayer_y4, "0");
   text_layer_set_font(s_textlayer_y4, s_res_digital_seven_mono_45);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_y4);
@@ -100,11 +91,45 @@ static void initialise_ui(void) {
   // s_textlayer_date
   s_textlayer_date = text_layer_create(GRect(0, 70, 144, 25));
   text_layer_set_background_color(s_textlayer_date, GColorClear);
-  text_layer_set_text_color(s_textlayer_date, GColorWhite);
   text_layer_set_text(s_textlayer_date, "hi poochie");
   text_layer_set_text_alignment(s_textlayer_date, GTextAlignmentCenter);
   text_layer_set_font(s_textlayer_date, s_res_digital_seven_mono_25);
   layer_add_child(window_get_root_layer(s_window), (Layer *)s_textlayer_date);
+  
+  
+  #ifdef PBL_COLOR
+    
+      text_layer_set_text_color(s_textlayer_h1, GColorRajah);
+      text_layer_set_text_color(s_textlayer_h2, GColorChromeYellow);
+      text_layer_set_text_color(s_textlayer_m1, GColorChromeYellow);
+      text_layer_set_text_color(s_textlayer_m2, GColorRajah);
+      
+      
+      text_layer_set_text_color(s_textlayer_y1, GColorRajah);
+      text_layer_set_text_color(s_textlayer_y2, GColorChromeYellow);
+      text_layer_set_text_color(s_textlayer_y3, GColorChromeYellow);
+      text_layer_set_text_color(s_textlayer_y4, GColorRajah);
+   
+      text_layer_set_text_color(s_textlayer_date, GColorChromeYellow);
+      
+  #else
+      text_layer_set_text_color(s_textlayer_h1, GColorWhite);
+      text_layer_set_text_color(s_textlayer_h2, GColorWhite);
+      text_layer_set_text_color(s_textlayer_m1, GColorWhite);
+      text_layer_set_text_color(s_textlayer_m2, GColorWhite);
+
+
+      text_layer_set_text_color(s_textlayer_y1, GColorWhite);
+      text_layer_set_text_color(s_textlayer_y2, GColorWhite);
+      text_layer_set_text_color(s_textlayer_y3, GColorWhite);
+      text_layer_set_text_color(s_textlayer_y4, GColorWhite);
+   
+      text_layer_set_text_color(s_textlayer_date, GColorWhite);
+  #endif
+  
+  
+  
+  
 }
 
 static void destroy_ui(void) {

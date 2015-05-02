@@ -38,10 +38,15 @@
             }
         ]
     },
+    "sdkVersion": "3",
     "shortName": "Poochie",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
     "uuid": "044cd05b-269c-40ce-8db3-291232eedd5f",
     "versionCode": 1,
-    "versionLabel": "1.0",
+    "versionLabel": "2.1",
     "watchapp": {
         "watchface": true
     }

@@ -1,4 +1,4 @@
-#include <time.h> 
+#include <pebble.h> 
 
 void show_face(void);
 void hide_face(void);
