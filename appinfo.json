@@ -1,7 +1,9 @@
 {
-    "appKeys": {},
+    "appKeys": {
+        "KEY_ENABLE_HOURLY_VIBE": 0
+    },
     "capabilities": [
-        ""
+        "configurable"
     ],
     "companyName": "yuri@galanter.net",
     "longName": "Poochie",
@@ -45,8 +47,7 @@
         "basalt"
     ],
     "uuid": "044cd05b-269c-40ce-8db3-291232eedd5f",
-    "versionCode": 1,
-    "versionLabel": "2.1",
+    "versionLabel": "2.3",
     "watchapp": {
         "watchface": true
     }
