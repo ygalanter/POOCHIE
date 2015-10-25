@@ -11,17 +11,6 @@
     "resources": {
         "media": [
             {
-                "file": "images/MENU.png",
-                "menuIcon": true,
-                "name": "IMAGE_MENU",
-                "type": "png"
-            },
-            {
-                "file": "images/bACK.png",
-                "name": "IMAGE_BACKGROUND",
-                "type": "png"
-            },
-            {
                 "characterRegex": "[0-9]",
                 "file": "fonts/digital-7 (mono) (1).ttf",
                 "name": "DIGITAL_SEVEN_MONO_70",
@@ -37,6 +26,17 @@
                 "file": "fonts/digital-7 (mono) (1).ttf",
                 "name": "DIGITAL_SEVEN_MONO_25",
                 "type": "font"
+            },
+            {
+                "file": "images/MENU.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU",
+                "type": "png"
+            },
+            {
+                "file": "images/bACK.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
             }
         ]
     },
@@ -44,10 +44,11 @@
     "shortName": "Poochie",
     "targetPlatforms": [
         "aplite",
-        "basalt"
+        "basalt",
+        "chalk"
     ],
     "uuid": "044cd05b-269c-40ce-8db3-291232eedd5f",
-    "versionLabel": "2.3",
+    "versionLabel": "2.5",
     "watchapp": {
         "watchface": true
     }
