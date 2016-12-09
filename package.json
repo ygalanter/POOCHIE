@@ -1,0 +1,61 @@
+{
+    "author": "yuri@galanter.net",
+    "dependencies": {},
+    "keywords": [],
+    "name": "poochie",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "Poochie",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "KEY_ENABLE_HOURLY_VIBE": 0
+        },
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/MENU.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU",
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/bACK.png",
+                    "name": "IMAGE_BACKGROUND",
+                    "type": "bitmap"
+                },
+                {
+                    "characterRegex": "[0-9]",
+                    "file": "fonts/digital-7 (mono) (1).ttf",
+                    "name": "DIGITAL_SEVEN_MONO_70",
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9]",
+                    "file": "fonts/digital-7 (mono) (1).ttf",
+                    "name": "DIGITAL_SEVEN_MONO_45",
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/digital-7 (mono) (1).ttf",
+                    "name": "DIGITAL_SEVEN_MONO_25",
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite"
+        ],
+        "uuid": "044cd05b-269c-40ce-8db3-291232eedd5f",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "2.5.0"
+}
